@@ -1,3 +1,5 @@
+import Cities from './Cities.js'
+
 function Main() {
   return (
     <body>
@@ -7,6 +9,9 @@ function Main() {
       <div className="city">
         <label for="city">City:</label>
         <input type="text" name="city"/>
+        < Cities/>
+
+        
       </div>
       //label for this weather display
       //container to display weather
