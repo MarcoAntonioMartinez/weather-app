@@ -1,5 +1,5 @@
-
 import './App.css';
+import Main from './Main.js';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
           Simple Weather App
         </h1>
       </header>
+      < Main/>
     </div>
   );
 }
