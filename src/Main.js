@@ -1,4 +1,5 @@
 import Cities from './Cities.js'
+import ApiHandler from './ApiHandler.js';
 
 function Main() {
   return (
@@ -16,8 +17,9 @@ function Main() {
       {/* placeholder : label for this weather display
         container to display weather*/}
       <div className="weather">
-       {/* placeholder: this is where all the weather api stuff gets displayed */}
-       
+       {/* placeholder: this is where all the weather api stuff gets displayed */}   
+        <ApiHandler />
+
        
       </div>
 
