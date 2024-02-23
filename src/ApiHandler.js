@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
+
 function ApiHandler() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState('')
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=e41d6c790a97a2abdd9e063b3e94fce3`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${process.env.REACT_APP_KEY}`;
         
 const searchLocation = (event) => {
   if(event.key === 'Enter'){
