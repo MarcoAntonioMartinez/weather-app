@@ -1,16 +1,16 @@
 import './App.css';
-import Main from './Main.js';
+import ApiHandler from './ApiHandler.js';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>
-          Simple Weather App
-        </h1>
-      </header>
-      < Main/>
-    </div>
+    
+    <div>
+      <div className="weather">
+       {/* placeholder: this is where all the weather api stuff gets displayed */}   
+        <ApiHandler />
+      </div>
+  </div>
   );
 }
 
